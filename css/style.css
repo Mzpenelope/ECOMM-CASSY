@@ -1,0 +1,206 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+
+
+
+.containerr {
+  position: relative;
+  display: flex;
+}
+
+.containerr .cardd {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+.containerr .cardd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.containerr .cardd:hover::before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.containerr .cardd::after {
+  content: "Nike";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+img {
+  width: 100%;
+}
+
+.containerr .cardd .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+  display: flex;
+}
+
+.containerr .cardd:hover .imgBx {
+  top: 0;
+  transform: translateY(0);
+}
+
+.containerr .cardd .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg) rotate(25deg);
+  width: 270px;
+}
+
+.containerr .cardd .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.containerr .cardd:hover .contentBx {
+  height: 210px;
+}
+
+.containerr .cardd .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.containerr .cardd .contentBx .size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+}
+
+.containerr .cardd .contentBx .size h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.containerr .cardd .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.containerr .cardd .contentBx .size span:hover {
+  background: #9bdc28;
+}
+.containerr .cardd .contentBx .color {
+  transition: .75s;
+}
+.containerr .cardd .contentBx .color h3 {
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.containerr .cardd .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  z-index: 1000000;
+  display: inline-block;
+  transform: translateY(5px);
+}
+
+.containerr .cardd .contentBx .color span:nth-child(2) {
+  background: #9bdc28;
+}
+
+.containerr .cardd .contentBx .color span:nth-child(3) {
+  background: #0cc0d8;
+}
+
+.containerr .cardd .contentBx .color span:nth-child(4) {
+  background: #d84d0c;
+}
+
+.containerr .cardd .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  
+}
+
+.containerr .cardd:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(10px);
+  transition-delay: 0.75s;
+}
+
+.containerr .cardd .contentBx .size,
+.containerr .cardd .contentBx .color {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.containerr .cardd:hover .contentBx .size,
+.containerr .cardd:hover .contentBx .color {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: .5s;
+}
+
+.containerr .cardd:hover .contentBx .color {
+  transition-delay: .8s;
+}

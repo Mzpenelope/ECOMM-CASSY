@@ -1,0 +1,308 @@
+
+
+<article>
+	
+	
+	
+ <h1>Who We Are & What We Do</h1>
+	<p>Cassintimates is a transformative project founded by Christabel Aidoo and Phillipa Aidoo,
+         driven by a shared passion to providing solutions to women needs. </p>
+
+	<figure>
+		<div>
+			<img class="develop-photo" src="imgs/christy.jpg" alt=" " title="">
+		</div>
+		<figcaption> Christabel, Backend Developer</figcaption>
+	</figure>
+
+	<p> The vision is to offer our visitors an exceptional user experience, 
+        where every click brings them closer to a celebration of technology, their own beauty and confidence.</p>
+
+	<p>We believe that fashion is a form of self-expression, and our diverse range of products reflects this. </p>
+
+	<figure>
+		<div>
+			<img class="develop-photo" src="imgs/phill.jpg" alt="" title="">
+		</div>
+		<figcaption>Phillipa, Frontend Developer </figcaption>
+	</figure>
+
+	<p>I'm Christabel Aidoo, a legal expert with diverse skills and a passion for continual learning,  specializing in Backend development </p>
+
+	<p>And my partner Phillipa Aidoo, is a journalist and aspiring Specialized Frontend Developer, who adds her unique perspectives to Cassintimates...</p>
+
+	<figure>
+		<div>
+			<img class="develop-photo" src="imgs/Logo2.jpg" alt=" " title="">
+		</div>
+		<figcaption>Follow us on facebook</figcaption>
+	</figure>
+
+	<p> We're open from Monday to Saturday, from 8:00 AM to 8:00 PM, providing ample opportunity for you to explore our exquisite offerings and find the perfect ensemble that resonates with your personality. </p>
+
+
+	<div class="shuffle-photos">
+		<figure>
+			<div>
+				<img src="imgs/one.jpg" alt="" title=" ">
+			</div>
+			<figcaption>Collection for Valentine</figcaption>
+		</figure>
+
+		<figure>
+			<div>
+				<img src="imgs/image4.jpg" alt="Red sex tool." title="Vals day Special ">
+			</div>
+			<figcaption>Valentine Special </figcaption>
+		</figure>
+	</div>
+
+	<p> Discover your style, define your presence, and become a part of the Cass Intimates legacy.. </p>
+
+	<p> For inquiries, orders, and style advice, connect with us online or visit our store.  Cass Intimates: Embrace Your Essence, Unleash Your Confidence. 👙💖 </p>
+
+	
+</article>
+<style>
+ @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400&display=swap");
+
+:root {
+	--bg-color-1: hsl(60deg 23% 95%);
+	--bg-color-2: hsl(238deg 60% 96%);
+	--text-color: hsl(222deg 29% 24%);
+	--shadow-color: 60deg 8% 68%;
+	--shadow: 0.2px 0.5px 0.5px hsl(var(--shadow-color) / 0.41),
+		0.4px 1px 1px -1.3px hsl(var(--shadow-color) / 0.33),
+		1.3px 3.1px 3px -2.7px hsl(var(--shadow-color) / 0.26),
+		3.5px 8.3px 8.1px -4px hsl(var(--shadow-color) / 0.18);
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: clamp(1.125rem, 2vw, 1.25rem);
+	color: var(--text-color);
+	background-image: linear-gradient(
+		to bottom,
+		var(--bg-color-1),
+		var(--bg-color-2)
+	);
+	overflow-x: hidden;
+   background: black;
+}
+
+article {
+	--photo-margin: clamp(1rem, 6vw, 2rem);
+	inline-size: min(65ch, 100% - 4rem);
+	margin-inline: auto;
+	margin-block-end: 30vh;
+  margin: 0 auto;
+}
+
+header {
+	position: relative;
+	display: grid;
+	place-items: center;
+	height: calc(100vh - 15rem);
+}
+
+h1 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0.2em;
+	margin-inline-start: -2rem;
+	font-size: clamp(1.2rem, 9vw, 5rem);
+	font-family: "Caveat", cursive;
+	line-height: 1;
+	rotate: -3deg;
+	animation: bounceZoom 2s infinite;
+     background: linear-gradient(135deg, #751c37, #e44b5d, #f9a7af, #ffffff);
+	-webkit-text-fill-color: transparent;
+}
+
+ @keyframes bounceZoom {
+      0%, 20%, 50%, 80%, 100% {
+        transform: scale(1);
+      }
+      40% {
+        transform: scale(1.2);
+      }
+      60% {
+        transform: scale(0.8);
+      }
+    }
+
+h1 span {
+	font-size: 0.6em;
+}
+
+p {
+	margin-block: 2.5rem;
+	letter-spacing: -0.025em;
+	line-height: 1.75em;
+    color: pink;
+}
+
+figure {
+	position: relative;
+	display: grid;
+	grid-template-areas:
+		"photo"
+		"caption";
+	gap: 0.5rem;
+	margin-inline: auto;
+	border: 1rem solid white;
+	width: min(250px, 100%);
+	background-color: white;
+	box-shadow: var(--shadow);
+	rotate: var(--rotate, -3deg);
+	border-radius: 0.125rem;
+}
+
+figure:nth-of-type(even) {
+	direction: rtl;
+	--float: right;
+	--rotate: 2deg;
+	--offset: 0.5rem;
+}
+
+figure div {
+	overflow: hidden;
+	aspect-ratio: 1;
+	background-color: black;
+	border-radius: inherit;
+}
+
+img {
+	position: relative;
+	width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+}
+
+figcaption {
+	display: grid;
+	place-content: start end;
+	height: 3.5rem;
+	font-family: "Caveat", cursive;
+	line-height: 1;
+}
+
+.shuffle-photos {
+	display: grid;
+	grid-template-areas: "container";
+	place-items: center;
+	margin-inline: auto;
+}
+
+.shuffle-photos > * {
+	grid-area: container;
+}
+
+.shuffle-photos figure {
+	--float: none;
+	margin: unset;
+}
+
+.shuffle-photos > :first-child {
+	z-index: 1;
+}
+
+@media (min-width: 600px) {
+	figure {
+		clear: both;
+		float: var(--float, left);
+		margin-inline: 0 var(--photo-margin);
+		margin-block-end: var(--photo-margin);
+		translate: var(--offset, -0.5rem) 0;
+	}
+
+	.shuffle-photos {
+		float: right;
+		max-width: 300px;
+		margin-inline: var(--photo-margin) 0;
+		margin-block-end: var(--photo-margin);
+	}
+}
+
+/* --------------------------------
+✨ Scroll-driven animations
+--------------------------------- */
+figure {
+	view-timeline-name: --photo;
+}
+
+header {
+	animation: auto linear title both;
+	animation-timeline: view();
+	animation-range: exit 10% cover 80%;
+}
+
+.develop-photo {
+	animation: auto linear develop both;
+	animation-timeline: --photo;
+	animation-range: entry 30% cover 40%;
+}
+
+.shuffle-photos > :first-child {
+	animation: auto linear shuffle-top both;
+	animation-timeline: view();
+	animation-range: entry 110% cover 60%;
+}
+
+.shuffle-photos > :last-child {
+	animation: auto linear shuffle-bottom both;
+	animation-timeline: view();
+	animation-range: entry 110% cover 60%;
+}
+
+@keyframes title {
+	to {
+		opacity: 0;
+		translate: 0 10%;
+	}
+}
+
+@keyframes develop {
+	from {
+		filter: blur(30px);
+		scale: 1.1;
+		opacity: 0;
+	}
+	to {
+		filter: blur(0);
+		scale: 1;
+		opacity: 1;
+	}
+}
+
+@keyframes shuffle-top {
+	50% {
+		translate: 100% -20%;
+		rotate: 20deg;
+	}
+	to {
+		rotate: 5deg;
+	}
+}
+
+@keyframes shuffle-bottom {
+	50% {
+		translate: -15% 35%;
+		rotate: -15deg;
+		z-index: 0;
+	}
+	51% {
+		z-index: 1;
+	}
+	to {
+		rotate: -5deg;
+		z-index: 1;
+	}
+}
+
+</style>
+<script>
+
+
+</script>

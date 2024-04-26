@@ -1,0 +1,160 @@
+#preload_overlay {
+    position: fixed;
+    z-index: 900;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url(loader.gif) center center no-repeat #000;
+}
+
+body {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/**/
+#ffka_sc_wrap {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+bottom: 0; /* Align to the bottom of the page */
+    left: 0;
+    right: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+            margin-top: auto;
+} 
+
+
+@media only screen and (max-width: 250px) {
+    #ffka_sc_wrap {
+        transform: scale(0.45) translateY(-50%); /* Add translateY to adjust the position */
+    }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 450px) {
+    #ffka_sc_wrap {
+        transform: scale(0.65) translateY(-50%); /* Add translateY to adjust the position */
+    }
+}
+
+.photo {
+    position: absolute;
+    z-index: 1;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    left: 50%;
+    top: 50%;
+}
+
+.photo .slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.selected_IMG {
+    margin: auto;
+    z-index: 3;
+    transition: 0.8s;
+}
+
+.info_i,
+.info_ii,
+.info_iii {
+    opacity: 0;
+}
+
+.selected_IMG .info_i {
+    opacity: 1;
+    background: rgba(255, 255, 255, 1.0);
+    margin-top: -4px;
+    transition: 1s;
+}
+
+.selected_IMG .info_ii {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.selected_IMG .info_iii {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    z-index: 4;
+    transition: 0.5s;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.selected_IMG .info_iii span {
+    bottom: 0px;
+    position: absolute;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    width: calc(100% - 20px);
+}
+
+.selected_IMG:hover .info_iii {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.info_hide {
+    display: none;
+}
+
+.video {
+    display: none;
+}
+
+.selected_IMG .video {
+    display: block;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+/* sc_nav */
+
+#sc_nav {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+#sc_nav div {
+    font :center;
+}
+
+#sc_nav span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#sc_nav span:hover {
+    background: rgba(255, 255, 255, 0.8);
+}

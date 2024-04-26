@@ -1,0 +1,56 @@
+.gallery-block{
+	padding-bottom: 60px!important ;
+	padding-top: 60px !important;
+}
+.gallery-block .heading{
+    margin-bottom: 50px !important;
+    text-align: center!important ;
+}
+
+.gallery-block .heading h2{
+    font-weight: bold !important ;
+    font-size: 1.4rem!important ;
+    text-transform: uppercase!important ;
+}
+
+.gallery-block.cards-gallery h6 {
+  font-size: 17px !important;
+  font-weight: bold!important ; 
+}
+
+.gallery-block.cards-gallery .card{
+  transition: 0.4s ease!important ; 
+}
+
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15)!important ; 
+}
+
+.gallery-block.cards-gallery .card-body {
+  text-align: center!important ; 
+}
+
+.gallery-block.cards-gallery .card-body p {
+  font-size: 15px!important ; 
+}
+
+.gallery-block.cards-gallery a {
+  color: #212529!important ; 
+}
+
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none !important; 
+}
+
+.gallery-block.cards-gallery .card {
+  margin-bottom: 30px!important ; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15)!important;
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02) !important ;
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
+}
