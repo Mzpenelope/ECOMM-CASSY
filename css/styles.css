@@ -1,5 +1,40 @@
 @media screen and (min-width: 769px) {
-    .mobile-top-navigation { display: none;}
+.mobile-top-navigation {
+  display:none;
+}
+.top-custom-mobile-menu {
+  display: none; 
+}
+.top-custom-menu-list {
+  display: none; 
+}
+.top-custom-menu-list li {
+   display:none;
+}
+.top-custom-menu-list li a {
+ display:none;
+}
+.top-custom-menu-close-btn {
+  display:none;
+}
+.top-action-btn {
+    display:none;
+}
+#top-faq-button {
+    display:none;
+}
+.top-faq-popup {
+    display: none;
+}
+.top-faq-content {
+   display:none;
+}
+.top-faq-header {
+     display:none;
+}
+.top-faq-body {
+     display:none;
+}
 }
 
 @media screen and (max-width: 768px) {
