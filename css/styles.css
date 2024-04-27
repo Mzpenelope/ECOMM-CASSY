@@ -1,3 +1,85 @@
+@media screen and (max-width: 768px) {
+.mobile-top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+/* CSS for top custom mobile menu */
+.top-custom-mobile-menu {
+  display: none; /* Initially hide the mobile menu */
+}
+
+.top-custom-menu-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.top-custom-menu-list li {
+  margin-bottom: 10px;
+}
+
+.top-custom-menu-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* CSS for close button */
+.top-custom-menu-close-btn {
+  display: block;
+  margin-top: 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative; /* Set position to relative */
+  z-index: 999;
+}
+
+.top-action-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#top-faq-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.top-faq-popup {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.top-faq-content {
+    position: relative;
+}
+
+.top-faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.top-faq-body {
+    max-height: 200px;
+    overflow-y: auto;
+}
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400&display=swap");
 /* Additional class for smaller screens */
 .ban-text-newer {
@@ -10,7 +92,7 @@
     justify-content: center;
     align-items: center;
     color: #751c37; /* Example color */
-    background-color: pink; /* Example background color */
+    background-color: white; /* Example background color */
     padding: 10px; /* Example padding */
     border-radius: 5px; /* Example border radius */
     border: 1px solid gray; /* Example border */
@@ -47,7 +129,7 @@
 
 /* Additional class for smaller screens */
 .ban-text-new {
-  color: pink;
+  color: black;
 }
 @media screen and (max-width: 400px) {
   .ban-text-new {
@@ -55,8 +137,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #751c37; /* Set text color to pink */
-    background-color: white; /* Example background color */
+    color: pink; /* Set text color to pink */
+    background-color: #751c37; /* Example background color */
     padding: 10px; /* Example padding */
     border-radius: 5px; /* Example border radius */
     border: 1px solid gray; /* Example border */
@@ -155,15 +237,16 @@
 
 .welcome-text {
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3em; /* Adjust font size as needed */
+  font-size: 2em; /* Adjust font size as needed */
   font-weight: bold;
   text-align: center;
   color: black; /* Adjust text color as needed */
-  text-shadow: 0 0 10px rgba(244, 242, 242, 0.5); /* Add text shadow for better visibility */
+  text-shadow: black; /* Add text shadow for better visibility */
 text-transform: uppercase;
+display:block;
 }
 
 
@@ -220,7 +303,7 @@ text-transform: uppercase;
 
 
 .header-alert-news {
-    background-color: pink;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
