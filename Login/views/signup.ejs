@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Logo2.jpg" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/b72be65822.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cass/User - Signup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-principal">
+        <a
+          href=""
+          style="display: flex; flex-direction: row; align-items: center"
+        >
+        </a>
+        <a href="">
+          <i class="fas fa-home" style="font-size: 30px"></i>
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="login-container">
+        <form action="/signup" method="post">
+          <img class="avatar" src="Logo2.jpg" alt="img" />
+          <h2>Signup</h2>
+          <div class="input-div">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h5>Username</h5>
+              <input
+                type="text"
+                id="name"
+                name="username"
+                class="input"
+                required
+                autocomplete="off"
+              />
+              <!-- Corrected input name to "username" -->
+            </div>
+          </div>
+          <div class="input-div">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div>
+              <h5>Password</h5>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input"
+                required
+              />
+            </div>
+          </div>
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+    </div>
+    <footer style="text-align: center; color: #fff; padding: 40px 0">
+      <h2>Cass-Intimates</h2>
+      <p>&copy; All rights reserved</p>
+    </footer>
+  </body>
+</html>
