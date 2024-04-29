@@ -21,12 +21,13 @@ jobs:
       - name: Install dependencies
         run: |
           cd Login/  # Navigate to the root directory of your repository
+         
   
 
       - name: Build
         run: |
           cd Login/  # Navigate to the root directory of your repository
-        
+          npm run build
 
       - name: Start server
         run: |
