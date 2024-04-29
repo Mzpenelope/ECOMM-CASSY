@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: |
           cd Login/  # Navigate to the root directory of your repository
-          npm run build
+          node src/index.js
 
       - name: Start server
         run: |
