@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const connect = mongoose.connect("mongodb://localhost:27017/Cassy");
+const connect = mongoose.connect("mongodb+srv://phillipaaidoo12345:nxBF0e7WpH9Ux0tC@cluster0.2gh3upq.mongodb.net/Cassy");
 
 connect
   .then(() => {
@@ -20,6 +20,6 @@ const LoginSchema = new mongoose.Schema({
   },
 });
 
-const collection = new mongoose.model("login-user", LoginSchema);
+const collection = new mongoose.model("Login-User", LoginSchema);
 
 module.exports = collection;
