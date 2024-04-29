@@ -22,8 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: nodemon src/index.js
+        run: npm run build
 
-      - name: Show Port
-        run: |
-          echo "Server is running on port 5000"  # Replace 5000 with the actual port number
+      - name: Start server
+        run: npm start
