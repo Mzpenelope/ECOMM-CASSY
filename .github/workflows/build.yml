@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd ECOMM-CASSY/Login/package-locked.json  # Navigate to the root directory of your repository
+          cd Login/package-lock.json  # Navigate to the root directory of your repository
           npm ci
 
       - name: Build
