@@ -21,14 +21,14 @@ jobs:
       - name: Install dependencies
         run: |
           cd Login/  # Navigate to the root directory of your repository
-          npm ci
+  
 
       - name: Build
         run: |
-          cd ECOMM-CASSY/Login/  # Navigate to the root directory of your repository
+          cd Login/  # Navigate to the root directory of your repository
           nodemon src/index.js
 
       - name: Start server
         run: |
-          cd ECOMM-CASSY/Login/  # Navigate to the root directory of your repository
+          cd Login/  # Navigate to the root directory of your repository
           npm start
