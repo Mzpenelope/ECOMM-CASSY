@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd Login/package-lock.json  # Navigate to the root directory of your repository
+          cd Login/  # Navigate to the root directory of your repository
           npm ci
 
       - name: Build
