@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Out</title>
+ <link rel="icon" href="imgs/Logo2.jpg">
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/card-gallery.css">
+ <link rel="stylesheet" href="css/compact-gallery.css">
+ <link rel="stylesheet" href="css/grid-gallery.css">
+ <link rel="stylesheet" href="css/horizontal-img-scroll.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="css/horizontal.css">
+ <link rel="stylesheet" href="css/w3.css">
+ <link rel="stylesheet" href="css/horizontal.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"/>
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<style>
+ body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            margin: 10px auto;
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+</style>
+<body>
+    <h1>Sign Out</h1>
+    <form id="signoutForm" action="/signout" method="post">
+        <label for="username">Please confirm your name:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <button type="submit">Sign Out</button>
+    </form>
+</body>
+</html>
