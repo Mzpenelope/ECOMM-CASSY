@@ -20,6 +20,45 @@ const LoginSchema = new mongoose.Schema({
   },
 });
 
-const collection = new mongoose.model("login-user", LoginSchema);
+// Schema for wishlist
+const WishlistSchema = new mongoose.Schema({
+  userId: {
+    type: String,
+    required: true,
+  },
+  productId: {
+    type: String,
+    required: true,
+  },
+  productData: {
+    type: Object,
+    required: true,
+  },
+});
 
-module.exports = collection;
+// Schema for cart
+const CartSchema = new mongoose.Schema({
+  userId: {
+    type: String,
+    required: true,
+  },
+  productId: {
+    type: String,
+    required: true,
+  },
+  productData: {
+    type: Object,
+    required: true,
+  },
+});
+
+// Model for login users
+const User = mongoose.model("login-user", LoginSchema);
+
+// Model for wishlist
+const Wishlist = mongoose.model("wishlist", WishlistSchema);
+
+// Model for cart
+const Cart = mongoose.model("cart", CartSchema);
+
+module.exports = { Login, Wishlist, Cart };
