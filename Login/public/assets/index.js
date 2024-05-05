@@ -112,19 +112,38 @@ heartOutlineButtons.forEach(button => {
         const productId = this.closest('.showcase').dataset.productId; // Example: Get product ID from dataset
         // Get user ID (if needed) from the session or any relevant source
         const userId = getUserId(); // Replace getUserId() with the actual function to retrieve the user ID
+        // Get product data
+        const productData = getProductData(this.closest('.showcase'));
         // Call function to add product to wishlist
-        addToWishlist(userId, productId);
+        addToWishlist(userId, productId, productData);
     });
 });
 
+// Function to retrieve the user ID (replace with actual implementation)
+function getUserId() {
+    // Implement logic to retrieve the user ID (e.g., from session, local storage, etc.)
+    // For demonstration, returning a hardcoded user ID
+    return "user123"; // Example: Hardcoded user ID
+}
+
+// Function to extract product data from the showcase element
+function getProductData(showcaseElement) {
+    // Extract product data from the showcase element
+    const productTitle = showcaseElement.querySelector('.showcase-title').textContent;
+    const productPrice = showcaseElement.querySelector('.price').textContent;
+    // Additional product data extraction if needed
+    return { title: productTitle, price: productPrice };
+}
+
 // Frontend function to add a product to the wishlist
-function addToWishlist(userId, productId) {
+function addToWishlist(userId, productId, productData) {
+    // Send user ID, product ID, and product data to the server endpoint for adding to the wishlist
     fetch("/wishlist/add", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({ userId, productId }),
+        body: JSON.stringify({ userId, productId, productData }),
     })
     .then(response => {
         if (response.ok) {
@@ -141,9 +160,58 @@ function addToWishlist(userId, productId) {
     });
 }
 
+// Attach click event listener to bag-add-outline buttons
+const bagAddButtons = document.querySelectorAll(".btn-action ion-icon[name='bag-add-outline']");
+bagAddButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        // Get product ID from the parent element or any relevant attribute
+        const productId = this.closest('.showcase').dataset.productId; // Example: Get product ID from dataset
+        // Get user ID (if needed) from the session or any relevant source
+        const userId = getUserId(); // Replace getUserId() with the actual function to retrieve the user ID
+        // Get product data
+        const productData = getProductData(this.closest('.showcase'));
+        // Call function to add product to cart
+        addToCart(userId, productId, productData);
+    });
+});
+
 // Function to retrieve the user ID (replace with actual implementation)
 function getUserId() {
     // Implement logic to retrieve the user ID (e.g., from session, local storage, etc.)
     // For demonstration, returning a hardcoded user ID
     return "user123"; // Example: Hardcoded user ID
+}
+
+// Function to extract product data from the showcase element
+function getProductData(showcaseElement) {
+    // Extract product data from the showcase element
+    const productTitle = showcaseElement.querySelector('.showcase-title').textContent;
+    const productPrice = showcaseElement.querySelector('.price').textContent;
+    // Additional product data extraction if needed
+    return { title: productTitle, price: productPrice };
+}
+
+// Frontend function to add a product to the cart
+function addToCart(userId, productId, productData) {
+    // Send user ID, product ID, and product data to the server endpoint for adding to the cart
+    fetch("/cart/add", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ userId, productId, productData }),
+    })
+    .then(response => {
+        if (response.ok) {
+            // Product added to cart successfully
+            // Handle UI updates as needed
+            console.log("Product added to cart successfully");
+        } else {
+            // Error adding product to cart
+            console.error("Error adding product to cart");
+        }
+    })
+    .catch(error => {
+        console.error("Error adding product to cart:", error);
+    });
 }
