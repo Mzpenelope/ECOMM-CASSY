@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CassIntimates - Home</title>
+ <link rel="icon" href="imgs/Logo2.jpg">
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="css/card-gallery.css">
+ <link rel="stylesheet" href="css/compact-gallery.css">
+ <link rel="stylesheet" href="css/grid-gallery.css">
+ <link rel="stylesheet" href="css/horizontal-img-scroll.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href="css/horizontal.css">
+ <link rel="stylesheet" href="css/w3.css">
+ <link rel="stylesheet" href="css/horizontal.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"/>
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css" />
+
+ </head>
+ <style>
+       @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400&display=swap");
+       /* Override styles to retain black background and pink text color */
+       body {
+       background-color: black !important;
+       color: pink !important;
+       font-family: url("https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@400&display=swap") !important; 
+       }; </style>
+       <!--HEADER -->
+       <header>
+        <hr>
+         <hr>
+       <div class="header-top">
+       <div class="container">
+        <ul class="header-social-container">
+          <li><a href="https://www.facebook.com/cassintimates/" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="christabelaidoo71@gmail.com" class="social-link"><ion-icon name="logo-email"></ion-icon></a></li>
+          <li><a href="https://github.com/christabely" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li><a href="https://gh.linkedin.com/in/christabely" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li></ul>
+
+        <!-- Header Section -->
+     
+       <div class="header-top-actions">
+        <select name="currency">
+        <option value="en-US">USD &dollar;</option>
+        <option value="eur">Euro &euro;</option>
+         <option value="ghc">GHC &#8373;</option>
+        </select></div></div></div>
+
+       <div class="header-main">
+       <div class="container">
+       <a href="/home" class="header-logo">
+       <img src="imgs/newlogo.jpg" alt="logo" width="120" height="36"></a>
+       <div class="header-search-container">
+    <input type="search" name="search" class="search-field" placeholder="Search for a product..." autocomplete="off" id="searchField">
+    <button class="search-btn" id="searchIcon">
+        <ion-icon name="search-outline"></ion-icon>
+    </button>
+    <div class="search-dropdown" id="searchDropdown">
+        <a href="/lingerie">Lingerie</a>
+        <a href="/Bras"> Bra</a>
+        <a href="/Pants">Pants</a>
+        <a href="/videos">Videos</a>
+        <a href="/crochets">Crochets</a>
+        <a href="/Access">Accessories</a>
+        <a href="/toys">Toys</a>
+        <a href="/waistbeads">Waistbeads</a>
+        <a href="/home">Home</a>
+    </div>
+</div>
+       <div class="header-user-actions">
+       <button class="action-btn"> <a href="/signout">
+       <ion-icon name="log-out-outline"></ion-icon></a>
+       </button>
+       <button class="action-btn"><a href="/contact">
+       <ion-icon name="call-outline" class="call-outline"> </ion-icon>
+       <span class="count">2</span></a>
+       </button><button class="action-btn"><a href="/about">
+       <ion-icon name="information-circle-outline" class="information-circle-outline" ></ion-icon>
+       <span class="count">0</span></a></button></div></div></div>
+       
+
+       
+       
+       <nav class="desktop-navigation-menu">
+       <div class="container">
+       <ul class="desktop-menu-category-list">
+       <li class="menu-category"><a href="/home" class="menu-title">Home</a></li>
+       <li class="menu-category"><a href="#categories" class="menu-title">Product</a>
+        <div class="dropdown-panel">
+              <ul class="dropdown-panel-list">
+                <li class="menu-title"><a href="#">Categories</a></li>
+                <li class="panel-list-item"><a href="/Bras">Bras</a></li>
+                <li class="panel-list-item"><a href="/lingerie">Lingeries</a></li>
+                <li class="panel-list-item"><a href="/Pants">Pants</a></li>
+                <li class="panel-list-item"><a href="/waistbeads">Waistbeads</a></li>
+                <li class="panel-list-item"><a href="/Access">Accessories</a></li>
+                <li class="panel-list-item"><a href="/crochets">Crochets</a></li>
+                <li class="panel-list-item"><a href="/toys">Toys</a></li>
+                <li class="panel-list-item"><a href="/videos">Videos</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="/about" class="menu-title">About</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="/contact" class="menu-title">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+
+
+
+    <div class="mobile-bottom-navigation">
+<div class="custom-header">
+    <button class="custom-icon-btn" data-icon-trigger="custom-mobile-menu"> ◾◾◾</button>
+</div>
+<nav class="custom-mobile-menu" data-menu="custom-mobile-menu">
+    <ul class="custom-menu-list">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/lingerie">Lingerie</a></li>
+        <li><a href="/waistbeads">Waistbeads</a></li>
+        <li><a href="/Access">Accessories</a></li>
+        <li><a href="/toys">Toys</a></li>
+        <li><a href="/Pants">Pants</a></li>
+        <li><a href="/Bras">Bras</a></li>
+        <li><a href="/crochets">Crochets</a></li>
+        <li><a href="/videos">Video</a></li>
+    </ul>
+    <button class="custom-menu-close-btn" data-close-trigger="custom-mobile-menu">❌</button>
+</nav>
+
+
+     <button class="action-btn"> <a href="/signout">
+       <ion-icon name="log-out-outline"></ion-icon></a></button>
+
+      <button class="action-btn"><a href="/about">
+        <ion-icon name="information-circle-outline" class="information-circle-outline"> </ion-icon></a>
+
+        <span class="count">2</span>
+      </button>
+
+      <button class="action-btn"> <a href="/home">
+        <ion-icon name="home-outline"></ion-icon></a>
+      </button>
+
+      <button class="action-btn"><a href="/contact">
+        <ion-icon name="call-outline" class="call-outline"></ion-icon></a>
+
+        <span class="count">5</span>
+      </button>
+
+      <button class="action-btn"  id="faq-button"  data-mobile-menu-open-btn><ion-icon name="grid-outline"></ion-icon></button >
+        <div id="faq-popup" class="faq-popup">
+  <div class="faq-content">
+    <div class="faq-header">
+      <h3></h3>
+      <button class="close-btn" id="close-faq-popup">&times;</button>
+    </div>
+    <div class="faq-body">
+    </div>
+  </div>
+</div>
+    </div>
+       </header>
+
+  <!--
+                - MAIN
+         -->
+
+  <main>
+
+    <!--
+                              - BANNER
+                            -->
+  <div class="container">
+    <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="gowns">
+            <div class="carousel-item active">
+                <img class="bs-slider d-block w-100 banner-img" src="imgs/mv1.jpg" alt="photo" height="">
+                <div class="banner-content">
+                    <p class="banner-subtitle">PINK NIGHT</p>
+                    <p class="banner-text">&dollar; <b>50</b>.00</p>
+                    <a href="/cart" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bs-slider d-block w-100 banner-img" src="imgs/mv4.jpg" alt="photo">
+                <div class="banner-content">
+                    <p class="banner-subtitle">ROGUE NIGHT</p>
+                    <p class="banner-text">&dollar; <b>50</b>.00 </p>
+                    <a href="/cart" class="banner-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+           
+  <div class="category">
+  <div class="container">                         
+                                   <div class="category-img-box">
+                                   <img class="bs-slider d-block w-100" src="imgs/cat.jpg" alt="photo" width="70">
+                                </div></div></div>
+
+
+    <div class="philly" id="categories">
+   <a name="fluid-gallery"></a>
+    <section class="gallery-block compact-gallery" id="lingerie">
+        <div class="container">
+            <div class="heading">
+                <h2>
+                    LINGERIE
+                </h2> <hr />
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/a.jpg">
+                        <img class="img-fluid image" src="imgs/a.jpg">
+                        <span class="description">
+                            <span class="description-heading">Golden Elegance 50$</span>
+                            <span class="description-body">Perfect for all body shapes, available in black, blue and white</span>
+                        </span>
+                    </a>
+                    <div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/b.png">
+                        <img class="img-fluid image" src="imgs/b.png">
+                        <span class="description">
+                            <span class="description-heading">Divine Allure 199$</span>
+                            <span class="description-body">Perfect for all body shapes, available in black</span>
+                        </span>
+                    </a>
+                    <div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/four.jpg">
+                        <img class="img-fluid image" src="imgs/four.jpg">
+                        <span class="description">
+                            <span class="description-heading">Divine Allure 199$</span>
+                            <span class="description-body">Perfect for all body shapes, available in black</span>
+                        </span>
+                    </a>
+                    <div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/others10.jpg">
+                        <img class="img-fluid image" src="imgs/others10.jpg">
+                        <span class="description">
+                            <span class="description-heading">Pink Goddess 190$</span>
+                            <span class="description-body">Perfect for all body shapes, available in black</span>
+                        </span>
+                    </a>
+                    <div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/i.jpg">
+                        <img class="img-fluid image" src="imgs/i.jpg">
+                        <span class="description">
+                            <span class="description-heading">Red Moon 299$</span>
+                            <span class="description-body">Perfect for all body shapes, available in black</span>
+                        </span>
+                    </a>
+                    <div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/c.jpg">
+                        <img class="img-fluid image" src="imgs/c.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Desire #1 150$</span>
+                            <span class="description-body">Perfect for all body shapes, available in white</span>
+                        </span>
+                    </a>
+                    <div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/e.jpg">
+                        <img class="img-fluid image" src="imgs/e.jpg">
+                        <span class="description">
+                            <span class="description-heading">Sultry Secrets 100$</span>
+                            <span class="description-body">Perfect for all body shapes.</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                  </div>
+                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <div class="new__card">
+                    <a class="lightbox" href="imgs/d.jpg">
+                        <img class="img-fluid image" src="imgs/d.jpg">
+                        <span class="description">
+                            <span class="description-heading">Sensual silk 90$</span>
+                            <span class="description-body">Perfect for all body shapes</span>
+                        </span>
+                </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+              </div>
+          
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <div class="new__card">
+                    <a class="lightbox" href="imgs/f.jpg">
+                        <img class="img-fluid image" src="imgs/f.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Finesse 150$</span>
+                            <span class="description-body">Perfect for all body shapes, available in all colors</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <div class="new__card">
+                    <a class="lightbox" href="imgs/others.jpg">
+                        <img class="img-fluid image" src="imgs/others.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Desire #2 60$</span>
+                            <span class="description-body">Perfect for all body shapes, available in white</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                    <div class="new__card">
+                    <a class="lightbox" href="imgs/maa.jpg">
+                        <img class="img-fluid image" src="imgs/maa.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Desire #3 150$</span>
+                            <span class="description-body">Perfect for all body shapes, available in white</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                   <div class="new__card">
+                    <a class="lightbox" href="imgs/maa5.jpg">
+                        <img class="img-fluid image" src="imgs/maa5.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Desire #4 200$</span>
+                            <span class="description-body">Perfect for all body shapes, available in white</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                   <div class="new__card">
+                    <a class="lightbox" href="imgs/h.jpg">
+                        <img class="img-fluid image" src="imgs/h.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Desire #5 90$</span>
+                            <span class="description-body">Perfect for all body shapes, available in white</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                   <div class="new__card">
+                    <a class="lightbox" href="imgs/others2.jpg">
+                        <img class="img-fluid image" src="imgs/others2.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Desire #6 250$</span>
+                            <span class="description-body">Perfect for all body shapes, available in white</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                   <div class="new__card">
+                    <a class="lightbox" href="imgs/maa8.jpg">
+                        <img class="img-fluid image" src="imgs/maa8.jpg">
+                        <span class="description">
+                            <span class="description-heading">Midnight Desire #7 150$</span>
+                            <span class="description-body">Perfect for all body shapes, available in white</span>
+                        </span>
+                    </a><div class="new__cart">
+                <a href="/cart" class="button">
+                  <span class="button__text">Add to Cart</span>
+                  <div class="button__hover-left"></div>
+                  <div class="button__hover-right"></div>
+                </a>
+              </div>
+            </div>
+                </div>
+
+              <a name="slider"></a>
+    <h2>
+        GOWNS & STOCKINGS
+    </h2><hr />
+    <!-- Bootstrap 4 carousel slider -->
+    <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" id="gowns">
+            <div class="carousel-item active">
+                <img class=" bs-slider d-block w-100" src="imgs/gs.jpg" alt="photo"     height="">
+            </div>
+            <div class="carousel-item">
+                <img class=" bs-slider d-block w-100 " src="imgs/gs1.jpg" alt="photo">
+            </div>
+            <div class="carousel-item">
+                <img class=" bs-slider d-block w-100 " src="imgs/gs2.jpg" alt="photo">
+            </div>
+            <div class="carousel-item">
+                <img class=" bs-slider d-block w-100 " src="imgs/gs3.jpg" alt="photo">
+            </div>
+            <div class="carousel-item">
+                <img class=" bs-slider d-block w-100 " src="imgs/gs4.jpg" alt="photo">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+<br>
+
+                
+                <!-- CARD GALLERY -->
+        <a name="card-gallery"></a>
+        <section class="gallery-block cards-gallery" id="waistbeads">
+            <div class="container">
+                <div class="heading">
+                    <h2>
+                      WAIST BEADS
+                    </h2> <hr />
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="imgs/Premium1.jpeg">
+                                <img src="imgs/Premium1.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                   <a href="/waistbeads" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text">Beauty lies in the eyes of the beholder and on the waist of our customers</p>
+                                <p class="banner-text"> &dollar; <b>35</b>.99</p>
+                                 <div class="ban-text-newer"> &dollar; <b>35</b>.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="imgs/wb.jpeg">
+                                <img src="imgs/wb.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                    <a href="/waistbeads" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text">Embrace your curves and Cass Intimates.</p>
+                                <p class="banner-text"> &dollar; <b>25</b>.99</p>
+                                 <div class="ban-text-newer"> &dollar; <b>25</b>.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="imgs/Premium15.jpeg">
+                                <img src="imgs/Premium15.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                  <a href="/waistbeads" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text">The way to a man's heart is by wearing a customized Cassy beads that spells his name</p>
+                                <p class="banner-text"> &dollar; <b>50</b>.00</p>
+                                 <div class="ban-text-newer"> &dollar; <b>50</b>.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="imgs/Premium6.jpeg">
+                                <img src="imgs/Premium6.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                  <a href="/waistbeads" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text">Nothing looks better than a Cassy beads on a fine waist</p>
+                                <p class="banner-text"> &dollar; <b>39</b>.99</p>
+                                 <div class="ban-text-newer"> &dollar; <b>39</b>.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="Classic6.jpeg">
+                                <img src="imgs/Classic6.jpeg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                    <a href="/waistbeads" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text"> To be in shape, eat a balanced diet, exercise regularly, wear Cassy</p>
+                                <p class="banner-text"> &dollar; <b>15</b>.00</p>
+                                 <div class="ban-text-newer"> &dollar; <b>15</b>.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="imgs/Classic58.jpg">
+                                <img src="imgs/Classic58.jpg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                   <a href="/waistbeads" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text">Start your day with a sparkling glass of water, and an order❤️</p>
+                                <p class="banner-text"> &dollar; <b>10</b>.00</p>
+                                 <div class="ban-text-newer"> &dollar; <b>10</b>.00</div>
+                            </div>
+                        </div>
+                    </div>                 
+                                   
+        <a name="card-gallery"></a>
+        <section class="gallery-block cards-gallery" id="waistbeads">
+            <div class="container">
+                <div class="heading">
+                    <h2>
+                      TOYS & LUBES
+                    </h2> <hr />
+                </div>
+                <div class="row">                 
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="imgs/Toy7.jpg">
+                                <img src="imgs/Toy7.jpg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                   <a href="/toys" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text">Pleasure in a pack</p>
+                                <p class="banner-text"> &dollar; <b>35</b>.99</p>
+                                 <div class="ban-text-newer"> &dollar; <b>35</b>.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="imgs/Toy12.jpg">
+                                <img src="imgs/Toy12.jpg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                  <a href="/toys" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text">Nothing looks better than a Cassy beads on a fine waist</p>
+                                <p class="banner-text"> &dollar; <b>39</b>.99</p>
+                                 <div class="ban-text-newer"> &dollar; <b>39</b>.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 transform-on-hover">
+                            <a class="lightbox" href="Toy9.jpg">
+                                <img src="imgs/Toy9.jpg" alt="Card Image" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <h6>
+                                    <a href="/toys" class="banner-btn">Shop Now</a>
+                                </h6>
+                                <p class="text-muted card-text"> To be in shape, eat a balanced diet, exercise regularly, wear Cassy</p>
+                                <p class="banner-text"> &dollar; <b>15</b>.00</p>
+                                 <div class="ban-text-newer"> &dollar; <b>15</b>.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+    
+       <!-- Modal for full size images on click-->
+       <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+         <span class="w3-button w3-display-topright" title="Close Modal Image"
+           ><i class="fas fa-times"></i> Close</span
+         >
+         <div
+           class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
+         >
+           <img id="img01" class="w3-image" />
+           <p id="caption" class="w3-opacity w3-large"></p>
+         </div>
+       </div>
+     </div>
+     <!-- PANTIES & BRAS-->
+            <a name="grid-gallery"></a>
+            <section id="grid-padding" class="gallery-block grid-gallery">
+                <div class="container">
+                    <div class="heading">
+                        <h2>
+                            PANTIES & BRAS
+                        </h2><hr />
+                    </div>
+                    <div  id="row-1" class="row">
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/Panties41.jpeg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/Panties41.jpeg">
+                            </a>
+                            <a href="/Pants" class="banner-btn">&dollar; <b>25</b>.99</a>
+                            <a href="/Pants"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/db.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/db.jpg">
+                            </a>
+                            <a href="/Pants" class="banner-btn">&dollar; <b>35</b>.99</a>
+                             <a href="/Pants"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                         <div  id="grid-pics"class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/dj.jpeg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/dj.jpeg">
+                            </a>
+                            <a href="/Bras" class="banner-btn">&dollar; <b>35</b>.99</a>
+                            <a href="/Bras"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div  id="grid-pics"class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/dc.jpeg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/dc.jpeg">
+                            </a>
+                            <a href="/Bras" class="banner-btn">&dollar; <b>39</b>.99</a>
+                             <a href="/Bras"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div  id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/de.jpeg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/de.jpeg">
+                            </a>
+                            <a href="/Bras" class="banner-btn">&dollar; <b>20</b>.99</a>
+                              <a href="/Bras"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/lavie2.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/lavie2.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>20</b>.99</a>
+                             <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                         <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/OpenC.jpeg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/OpenC.jpeg">
+                            </a>
+                            <a href="/Pants" class="banner-btn">&dollar; <b>35</b>.99</a>
+                            <a href="/Pants"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div  id="grid-pics"class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/X.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/X.jpg">
+                            </a>
+                            <a href="/Pants" class="banner-btn">&dollar; <b>39</b>.99</a>
+                            <a href="/Pants"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                         <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/dh.jpeg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/dh.jpeg">
+                            </a>
+                            <a href="/Bras" class="banner-btn">&dollar; <b>59</b>.99</a>
+                            <a href="/Bras"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/di.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/di.jpg">
+                            </a>
+                            <a href="/Bras" class="banner-btn">&dollar; <b>30</b>.99</a>
+                            <a href="/Bras"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/lavie3.jpeg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/lavie3.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>70</b>.99</a>
+                            <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div  id="grid-pics"class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/lavie.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/lavie.jpg">
+                            </a>
+                            <a href="/waistbeads" class="banner-btn">&dollar; <b>59</b>.99</a>
+                             <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div  id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/ya3.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/ya3.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>89</b>.99</a>
+                            <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/ya7.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/ya7.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>40</b>.99</a>
+                            <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div  id="grid-pics"class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/ya14.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/ya14.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>39</b>.99</a>
+                           <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/ya13.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/ya13.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>150</b>.99</a>
+                             <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div id="grid-pics" class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/ya15.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/ya15.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>180</b>.99</a>
+                              <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                        </div>
+                        <div  id="grid-pics"class="col-md-6 col-lg-4 item">
+                            <a class="lightbox" href="imgs/imgs/ya12.jpg">
+                                <img class="img-fluid image scale-on-hover" src="imgs/ya12.jpg">
+                            </a>
+                            <a href="/lingerie" class="banner-btn">&dollar; <b>100</b>.00</a>
+                             <a href="/lingerie"> <p class="banner-text">Shop Now</p> </a>
+                              <div class="ban-text-new">Shop Now</div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="ims-container"><img class="ims" src="imgs/ebony1.png" alt="ims 1"><div class="scratch-overlay"></div></div>
+<div class="ims-container"><img class="ims" src="imgs/ebony2.png" alt="ims 2"><div class="scratch-overlay"></div></div>
+<div class="ims-container"><img class="ims" src="imgs/ebony3.png" alt="ims 1"><div class="scratch-overlay"></div></div>
+<div class="ims-container"><img class="ims" src="imgs/ebony4.png" alt="ims 2"><div class="scratch-overlay"></div></div>
+<div class="ims-container"><img class="ims" src="imgs/ebony5.png" alt="ims 2"><div class="scratch-overlay"></div></div>
+<div class="ims-container"><img class="ims" src="imgs/ebony6.png" alt="ims 2"><div class="scratch-overlay"></div></div>
+
+<div id="gallery-container">
+    <div id="gallery-frame">
+        <img class="active" src="imgs/tb.jpg" alt="solarcan">
+        <img src="imgs/ta.jpg" alt="photo #1">
+        <img src="imgs/tc.jpeg" alt="photo #2">
+        <img src="imgs/td.jpg" alt="photo #3">
+        <img src="imgs/te.jpg" alt="photo #4">
+        <img src="imgs/tf.jpg" alt="photo #5">
+        <img src="imgs/tg.jpg" alt="photo #6">
+    </div>
+</div>
+
+  
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+          <!--
+                                                                        - TESTIMONIALS
+                                                                      -->
+
+          <div class="testimonial">
+
+            <h2 class="title">Testimonial</h2>
+
+            <div class="testimonial-card">
+
+              <img src="imgs/christy.jpg" alt="Christy" class="testimonial-banner" width="200" height="200">
+
+              <p class="testimonial-name">
+                Christy
+              </p>
+
+              <p class="testimonial-title">
+                CEO & Founder
+              </p>
+
+              <img src="imgs/life.png" alt="quotation" class="quotation-img" width="200">
+
+              <p class="testimonial-desc">
+                Unleash Your Femme Fatale with Cass Intimates
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+                                                                        - CTA
+                                                                      -->
+
+          <div class="cta-container">
+
+            <img src="imgs/others7.jpg" alt="summer collection" class="cta-banner">
+
+            <a href="/cart" class="cta-content">
+
+              <p class="discount">
+                15% Discount
+              </p>
+
+              <h2 class="cta-title">Snow Barbie</h2>
+
+              <p class="cta-text">
+                 $55
+              </p>
+
+              <button href="/cart" class="cta-btn">Buy Now</button>
+            </a>
+          </div>
+
+
+
+          <!--
+                                                                        - SERVICE
+                                                                      -->
+
+          <div class="service">
+            <h2 class="title">Services</h2>
+            <div class="service-container">
+              <a href="/cart" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Delivery by ship</h3>
+                </div>
+              </a>
+
+              <a href="/cart" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Delivery by plane</h3>
+                </div>
+              </a>
+
+              <a href="/contact" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Call Us</h3>
+                  <p class="service-desc">
+                    Hours: 8AM - 11PM
+                  </p>
+                </div>
+              </a>
+
+              <a href="/contact" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Share</h3>
+                </div>
+              </a>
+
+              <a href="/cart" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Gift Cards</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ BLOG
+
+                            <div class="blog">
+                              <div class="container">
+                                <div class="blog-container has-scrollbar">
+                                  <div class="blog-card">
+                                    <div class="blog-content">
+                                      <a href="#" class="blog-category">Fashion</a>
+                                      <a href="https://www.thezoereport.com/fashion/bag-charms-keychains">
+                                        <h3 class="blog-title">Bag Charms & Keychains Are Unexpectedly Resurfacing.</h3>
+                                      </a>
+                                      <p class="blog-meta">
+                                        By <cite> Kelsey Stewart</cite> / <time datetime="2023-04-28">Apr 28, 2024</time>
+                                      </p>
+                                    </div>
+                                  </div>
+
+                                  <div class="blog-card">                               
+                                    <div class="blog-content">
+                                      <a href="#" class="blog-category">Beauty</a>
+                                        <a href="https://www.vogue.com/article/how-to-get-glass-skin-k-beauty"> 
+                                          <h3 class="blog-title">How to Get Glass Skin, According to K-beauty Experts.</h3>
+                                        </a>
+                                      <p class="blog-meta">
+                                        By <cite>Kiana Murden</cite> / <time datetime="2024-04-24">April 24, 2024</time>
+                                      </p>
+                                    </div>
+                                  </div>
+
+                                  <div class="blog-card">                        
+                                    <div class="blog-content">
+                                      <a href="#" class="blog-category">BDSM</a>
+                                        <a href="#"> 
+                                          <h3 class="blog-title">Intimacy </h3> </a>
+                                      <p class="blog-meta">
+                                        By <cite>Anonymous</cite> / <time datetime="2022-05-2">May 2, 2024</time>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+  </main>
+
+
+ <!-- ========== Newsletter Section ========== -->
+      <section class="newsletter section">
+    <div class="container">
+        <div class="newsletter__container">
+            <div class="newsletter__data">
+                <h2 class="newsletter__title">Subscribe</h2>
+                <p class="newsletter__description">
+                    Get 10% discount on all products
+                </p>
+            </div>
+            <form action="/subscribe" method="POST" class="newsletter__form">
+                <input type="email" name="email" placeholder="ex@gmail.com" required class="newsletter__input" />
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+
+  <!--
+                - FOOTER
+              -->
+  <footer>
+
+    <div class="footer-category">
+      <div class="container">
+    <div class="footer-nav">
+      <div class="container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+          <li class="footer-nav-item">
+            <a href="/lingerie" class="footer-nav-link">Lingerie</a>
+            <a href="/waistbeads" class="footer-nav-link">Waist Beads</a>
+            <a href="/Pants" class="footer-nav-link">Pants</a>
+            <a href="/Bras" class="footer-nav-link">Bras</a>
+            <a href="/Access" class="footer-nav-link">Accessories </a>
+            <a href="/toys" class="footer-nav-link">Toys</a>
+            <a href="/crochets" class="footer-nav-link">Crochets</a>
+            <a href="/videos" class="footer-nav-link">Videos</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Payments</a>
+             <a href="#" class="footer-nav-link">Shipping</a>
+              <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li> </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <addres class="footer-nav-link">
+              Doodowa, Eastern region, Ghana
+            </address>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+233556738108" class="footer-nav-link">(233) 556 738 108</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:example@gmail.com" class="footer-nav-link">christabelaidoo101@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Socials</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+              <li class="footer-nav-item"><a href="https://www.facebook.com/cassintimates/" class="footer-nav-link">
+              <ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li class="footer-nav-item">
+                <a href="https://github.com/christabely"class="footer-nav-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="https://gh.linkedin.com/in/christabely" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="christabelaidoo71@gmail.com" class="footer-nav-link">
+                  <ion-icon name="logo-email"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="imgs/payment.png" alt="payment" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <strong>Phillipa Aidoo & Christabel Aidoo</strong> All rights reserved
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <div class="header-alert-news">
+       <p> Get free Shipping on all orders over 600$</p></div>
+<div id="bg-wrap">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+    <defs>
+    <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+    <radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+    </defs>
+    
+    <rect x="13.744%" y="1.18473%" width="100%" height="100%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+    <rect x="-2.17916%" y="35.4267%" width="100%" height="100%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+    </rect>
+    <rect x="9.00483%" y="14.5733%" width="100%" height="100%" fill="url(#Gradient3)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+    </rect>
+    </svg>
+  </div>
+  <!--
+                - custom js link
+              -->
+  <script src="index.js"></script>
+
+  <!--
+                - ionicon link
+              -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+   <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function() {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+
+  <!-- BS4 JQUERY AND POPPER.js CDN's -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+
+    <!-- local script file  -->
+
+<script>
+        baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
+
+    </script>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+        const galleryFrame = document.getElementById('gallery-frame');
+        const images = galleryFrame.querySelectorAll('img');
+
+        images.forEach(img => {
+            img.addEventListener('click', function () {
+                images.forEach(img => {
+                    img.classList.remove('active');
+                    img.style.transform = 'rotate(45deg) scale(1)';
+                });
+                this.classList.add('active');
+                this.style.transform = 'rotate(0) scale(1.2)';
+            });
+        });
+    });
+</script>
+<script>
+  const imss = document.querySelectorAll('.ims');
+  const scratchOverlay = document.querySelector('.scratch-overlay');
+
+  imss.forEach(ims => {
+    ims.addEventListener('mouseenter', () => {
+      ims.style.filter = 'blur(0)';
+    });
+
+    ims.addEventListener('mouseleave', () => {
+      ims.style.filter = 'blur(20px)';
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var searchField = document.getElementById("searchField");
+    var searchDropdown = document.getElementById("searchDropdown");
+
+    // Toggle dropdown when search field is clicked
+    searchField.addEventListener("click", function() {
+        if (searchDropdown.style.display === "block") {
+            searchDropdown.style.display = "none";
+        } else {
+            searchDropdown.style.display = "block";
+        }
+    });
+
+    // Hide dropdown when clicking outside of it
+    window.addEventListener("click", function(event) {
+        if (event.target !== searchField && event.target !== searchDropdown && !searchDropdown.contains(event.target)) {
+            searchDropdown.style.display = "none";
+        }
+    });
+});
+
+</script>
+<script>document.addEventListener("DOMContentLoaded", function() {
+    var iconTriggerBtn = document.querySelector('.custom-icon-btn[data-icon-trigger]');
+    var mobileMenu = document.querySelector('.custom-mobile-menu[data-menu]');
+    var closeMenuBtn = document.querySelector('.custom-menu-close-btn[data-close-trigger]');
+
+    function openMobileMenu() {
+        mobileMenu.classList.add('active');
+    }
+
+    function closeMobileMenu() {
+        mobileMenu.classList.remove('active');
+    }
+
+    iconTriggerBtn.addEventListener("click", openMobileMenu);
+
+    if (closeMenuBtn) {
+        closeMenuBtn.addEventListener("click", closeMobileMenu);
+    }
+
+    document.addEventListener("click", function(event) {
+        if (!event.target.closest('.custom-mobile-menu') && !event.target.matches('.custom-icon-btn[data-icon-trigger]')) {
+            closeMobileMenu();
+        }
+    });
+});
+</script>
+<script>// Fetch FAQ data from backend or predefined dataset
+function fetchFAQ() {
+  // Simulated example FAQ data
+  const faqData = [
+    { question: "What is your return policy?", answer: "Our return policy allows customers to return items within 30 days of purchase for a full refund. Items must be unused and in their original packaging." },
+    { question: "How do I track my order?", answer: "To track your order, log in to your account and navigate to the 'Order History' section. There, you will find tracking information for your recent orders." },
+    { question: "What payment methods do you accept?", answer: "We accept all major credit cards, including Visa and Mastercard. Additionally, we offer payment through PayPal, Apple Pay and Mobile Money." },
+    { question: "Do you offer international shipping?", answer: "Yes, we offer international shipping to most countries. Shipping rates and delivery times may vary depending on the destination. Please refer to our shipping policy for more information." },
+    { question: "Can I cancel my order after it's been placed?", answer: "Unfortunately, we are unable to cancel orders once they have been placed. However, you may be able to return the items for a refund once they are received." },
+    { question: "How can I contact customer support?", answer: "You can contact our customer support team via email at phillipaaidoo12345@gmail.com or by phone at 233-596-430-557. Our team is available to assist you Monday through Friday, from 9 am to 5 pm GMT." },
+  ];
+
+  // Generate HTML for FAQ items
+  const faqHTML = faqData.map(item => `
+    <div class="faq-item">
+      <h4>${item.question}</h4>
+      <p>${item.answer}</p>
+    </div>
+  `).join('');
+
+  // Display FAQ items in the popup
+  document.querySelector('.faq-body').innerHTML = faqHTML;
+}
+
+// Show FAQ popup
+document.getElementById('faq-button').addEventListener('click', function() {
+  document.getElementById('faq-popup').style.display = 'block';
+  fetchFAQ(); // Fetch and display FAQ data
+});
+
+// Close FAQ popup
+document.getElementById('close-faq-popup').addEventListener('click', function() {
+  document.getElementById('faq-popup').style.display = 'none';
+});
+</script>
+
+
+
+
+
+
+<script>// Fetch FAQ data from backend or predefined dataset
+function topfetchFAQ() {
+  // Simulated example FAQ data
+  const topfaqData = [
+    { question: "What is your return policy?", answer: "Our return policy allows customers to return items within 30 days of purchase for a full refund. Items must be unused and in their original packaging." },
+    { question: "How do I track my order?", answer: "To track your order, log in to your account and navigate to the 'Order History' section. There, you will find tracking information for your recent orders." },
+    { question: "What payment methods do you accept?", answer: "We accept all major credit cards, including Visa and Mastercard. Additionally, we offer payment through PayPal, Apple Pay and Mobile Money." },
+    { question: "Do you offer international shipping?", answer: "Yes, we offer international shipping to most countries. Shipping rates and delivery times may vary depending on the destination. Please refer to our shipping policy for more information." },
+    { question: "Can I cancel my order after it's been placed?", answer: "Unfortunately, we are unable to cancel orders once they have been placed. However, you may be able to return the items for a refund once they are received." },
+    { question: "How can I contact customer support?", answer: "You can contact our customer support team via email at phillipaaidoo12345@gmail.com or by phone at 233-596-430-557. Our team is available to assist you Monday through Friday, from 9 am to 5 pm GMT." },
+  ];
+
+  // Generate HTML for FAQ items
+  const topfaqHTML = topfaqData.map(item => `
+    <div class="faq-item">
+      <h4>${item.question}</h4>
+      <p>${item.answer}</p>
+    </div>
+  `).join('');
+
+  // Display FAQ items in the popup
+  document.querySelector('.top-faq-body').innerHTML = topfaqHTML;
+}
+
+// Show FAQ popup
+document.getElementById('top-faq-button').addEventListener('click', function() {
+  document.getElementById('top-faq-popup').style.display = 'block';
+  topfetchFAQ(); // Fetch and display FAQ data
+});
+
+// Close FAQ popup
+document.getElementById('top-close-faq-popup').addEventListener('click', function() {
+  document.getElementById('top-faq-popup').style.display = 'none';
+});
+</script>
+<script>// JavaScript for menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const iconButton = document.querySelector('.top-custom-icon-btn');
+  const menu = document.querySelector('.top-custom-mobile-menu');
+  const closeButton = document.querySelector('.top-custom-menu-close-btn');
+
+  // Toggle menu visibility when icon button is clicked
+  iconButton.addEventListener('click', function() {
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Close menu when close button is clicked
+  closeButton.addEventListener('click', function() {
+    menu.style.display = 'none';
+  });
+});
+ </script>
+
+</body>
+</html>
