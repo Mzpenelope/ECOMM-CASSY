@@ -54,4 +54,22 @@ This will generate a JWT containing the user's ID upon successful authentication
 
 In the src/index.js, remember to replace "your_secret_key" with an actual secure secret key for JWT token signing.
 
+You can generate the secret key within your project directory using a separate script if you prefer. Here's how you can do it:
 
+1. Create a new JavaScript file (e.g., `generateSecretKey.js`) within your project directory.
+2. In this file, use a library like `crypto` to generate a secure random string that you will use as your secret key.
+3. Run this script to generate the secret key.
+4. Copy the generated key and paste it into your `src/index.js` file where you handle JWT token generation.
+
+Here's an example of how your `generateSecretKey.js` file might look:
+
+```javascript
+const crypto = require('crypto');
+
+// Generate a secure random string
+const secretKey = crypto.randomBytes(32).toString('hex');
+
+console.log('Generated secret key:', secretKey);
+```
+
+After running this script (`node generateSecretKey.js`), you'll get a randomly generated secret key that you can use in your `src/index.js` file. Remember to keep this key secure and don't expose it in your codebase or anywhere public.
