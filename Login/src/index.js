@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 const collection = require("./config");
 const bodyParser = require("body-parser");
 
@@ -110,26 +111,31 @@ app.post("/signup", async (req, res) => {
   }
 });
 
-//Login User
+// Login User
 app.post("/login", async (req, res) => {
   try {
-    const check = await collection.findOne({ name: req.body.username });
-    if (!check) {
-      res.send("username cannot be found");
+    const user = await collection.findOne({ name: req.body.username });
+    if (!user) {
+      return res.status(404).send("Username not found");
     }
 
-    //compare the hash password with the database plain text
+    // compare the hash password with the database plain text
     const isPasswordMatch = await bcrypt.compare(
       req.body.password,
-      check.password
+      user.password
     );
     if (isPasswordMatch) {
-      res.render("home");
+      // Generate JWT token containing the user's ID
+      const token = jwt.sign({ userId: user._id }, "your_secret_key", {
+        expiresIn: "6h",
+      }); // Change "your_secret_key" to a secure secret key
+      res.json({ token });
     } else {
-      req.send("wrong password");
+      res.status(401).send("Incorrect password");
     }
-  } catch {
-    res.send("wrong details");
+  } catch (error) {
+    console.error("Login error:", error);
+    res.status(500).send("An error occurred during login");
   }
 });
 
