@@ -52,6 +52,13 @@ const CartSchema = new mongoose.Schema({
   },
 });
 
-const collection = new mongoose.model("login-user", LoginSchema);
+// Model for login users
+const User = mongoose.model("login-user", LoginSchema);
 
-module.exports = collection;
+// Model for wishlist
+const Wishlist = mongoose.model("wishlist", WishlistSchema);
+
+// Model for cart
+const Cart = mongoose.model("cart", CartSchema);
+
+module.exports = { User, Wishlist, Cart };
