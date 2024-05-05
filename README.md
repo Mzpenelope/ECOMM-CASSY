@@ -71,5 +71,17 @@ const secretKey = crypto.randomBytes(32).toString('hex');
 
 console.log('Generated secret key:', secretKey);
 ```
+or
+
+const crypto = require('crypto');
+
+// Generate a random secure token
+const generateToken = () => {
+  return crypto.randomBytes(64).toString('hex');
+};
+
+console.log(generateToken());
+
+
 
 After running this script (`node generateSecretKey.js`), you'll get a randomly generated secret key that you can use in your `src/index.js` file. Remember to keep this key secure and don't expose it in your codebase or anywhere public.
