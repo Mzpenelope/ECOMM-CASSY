@@ -4,7 +4,7 @@ const path = require("path");
 const bcrypt = require("bcrypt");
 const collection = require("./config");
 const bodyParser = require("body-parser");
-
+const { Login, Wishlist, Cart } = require("./config");
 
 const app = express();
 //convert data into json format
@@ -95,7 +95,7 @@ app.post("/signup", async (req, res) => {
   };
 
   //check if user already exist in database
-  const existingUser = await collection.findOne({ name: data.name });
+  const existingUser = await Login.findOne({ name: data.name });
   if (existingUser) {
     res.send("User already exists. Please choose a different username.");
   } else {
@@ -105,15 +105,16 @@ app.post("/signup", async (req, res) => {
 
     data.password = hashedPassword;
 
-    const userdata = await collection.insertMany(data);
+    const userdata = await Login.insertMany(data);
     console.log(userdata);
+    res.send("User registered successfully");
   }
 });
 
 //Login User
 app.post("/login", async (req, res) => {
   try {
-    const check = await collection.findOne({ name: req.body.username });
+    const check = await Login.findOne({ name: req.body.username });
     if (!check) {
       res.send("username cannot be found");
     }
