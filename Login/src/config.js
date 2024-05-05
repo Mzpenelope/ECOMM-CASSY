@@ -61,6 +61,4 @@ const Wishlist = mongoose.model("wishlist", WishlistSchema);
 // Model for cart
 const Cart = mongoose.model("cart", CartSchema);
 
-const collection = new mongoose.model("login-user", LoginSchema; "wishlist", WishlistSchema; "cart", CartSchema);
-
-module.exports = collection;
+module.exports = { Login, Wishlist, Cart };
