@@ -2,7 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 const collection = require("./config");
 const bodyParser = require("body-parser");
 
@@ -111,31 +110,26 @@ app.post("/signup", async (req, res) => {
   }
 });
 
-// Login User
+//Login User
 app.post("/login", async (req, res) => {
   try {
-    const user = await collection.findOne({ name: req.body.username });
-    if (!user) {
-      return res.status(404).send("Username not found");
+    const check = await collection.findOne({ name: req.body.username });
+    if (!check) {
+      res.send("username cannot be found");
     }
 
-    // compare the hash password with the database plain text
+    //compare the hash password with the database plain text
     const isPasswordMatch = await bcrypt.compare(
       req.body.password,
-      user.password
+      check.password
     );
     if (isPasswordMatch) {
-      // Generate JWT token containing the user's ID
-      const token = jwt.sign({ userId: user._id }, "your_secret_key", {
-        expiresIn: "6h",
-      }); // Change "your_secret_key" to a secure secret key
-      res.json({ token });
+      res.render("home");
     } else {
-      res.status(401).send("Incorrect password");
+      req.send("wrong password");
     }
-  } catch (error) {
-    console.error("Login error:", error);
-    res.status(500).send("An error occurred during login");
+  } catch {
+    res.send("wrong details");
   }
 });
 
@@ -152,6 +146,30 @@ app.post("/signout", (req, res) => {
         // If the username doesn't match, display an error message or handle it as needed
         res.send("Invalid username. Please try again.");
     }
+});
+
+// Route to add product to wishlist
+app.post("/wishlist/add", async (req, res) => {
+  const { userId, productId, productData } = req.body;
+  try {
+    const wishlistItem = new Wishlist({ userId, productId, productData });
+    await wishlistItem.save();
+    res.status(200).send("Product added to wishlist successfully");
+  } catch (error) {
+    res.status(500).send("Error adding product to wishlist");
+  }
+});
+
+// Route to add product to cart
+app.post("/cart/add", async (req, res) => {
+  const { userId, productId, productData } = req.body;
+  try {
+    const cartItem = new Cart({ userId, productId, productData });
+    await cartItem.save();
+    res.status(200).send("Product added to cart successfully");
+  } catch (error) {
+    res.status(500).send("Error adding product to cart");
+  }
 });
 
 const port = 5447;
