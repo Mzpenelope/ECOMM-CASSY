@@ -105,7 +105,7 @@ app.post("/signup", async (req, res) => {
 
     data.password = hashedPassword;
 
-    const userdata = await Login.insertMany(data);
+    const userdata = await Login.create(data);
     console.log(userdata);
     res.send("User registered successfully");
   }
