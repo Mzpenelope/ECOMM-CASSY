@@ -104,4 +104,46 @@ for (let i = 0; i < accordionBtn.length; i++) {
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+// Attach click event listener to heart-outline buttons
+const heartOutlineButtons = document.querySelectorAll(".btn-action ion-icon[name='heart-outline']");
+heartOutlineButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        // Get product ID from the parent element or any relevant attribute
+        const productId = this.closest('.showcase').dataset.productId; // Example: Get product ID from dataset
+        // Get user ID (if needed) from the session or any relevant source
+        const userId = getUserId(); // Replace getUserId() with the actual function to retrieve the user ID
+        // Call function to add product to wishlist
+        addToWishlist(userId, productId);
+    });
+});
 
+// Frontend function to add a product to the wishlist
+function addToWishlist(userId, productId) {
+    fetch("/wishlist/add", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ userId, productId }),
+    })
+    .then(response => {
+        if (response.ok) {
+            // Product added to wishlist successfully
+            // Handle UI updates as needed
+            console.log("Product added to wishlist successfully");
+        } else {
+            // Error adding product to wishlist
+            console.error("Error adding product to wishlist");
+        }
+    })
+    .catch(error => {
+        console.error("Error adding product to wishlist:", error);
+    });
+}
+
+// Function to retrieve the user ID (replace with actual implementation)
+function getUserId() {
+    // Implement logic to retrieve the user ID (e.g., from session, local storage, etc.)
+    // For demonstration, returning a hardcoded user ID
+    return "user123"; // Example: Hardcoded user ID
+}
