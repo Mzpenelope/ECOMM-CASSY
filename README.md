@@ -5,7 +5,9 @@ ECOMM-CASSY is a dynamic website built and developed by Phillipa Aidoo and Chris
 
 # Overview 
 ![touchmaster_1715076933986](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/7c3a36cd-9954-412f-b64d-b3750dcbd1cf)
-![touchmaster_1715076933986](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/fc25aa1f-fafd-48b5-9bf6-b774a43fad2d)
+![touchmaster_1715076933986](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/c8276d21-49c7-40f3-8be1-51a2b83a56c8)
+![touchmaster_1715076882977](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/364e7c23-a3a5-4418-99d9-46207acf7493)
+
 ![touchmaster_1715076854441](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/ddb00164-7d1b-4bcf-b2c1-7fa079075e35)
 
 
