@@ -1,0 +1,102 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Golden Elegance",
+      "price": "$50.00",
+      "imgSrc": "imgs/a.jpg",
+      "bgGradient": ["#FE7831", "#FFDEBE"]
+    },
+    {
+      "id": 2,
+      "name": "Divine Allure",
+      "price": "$199.00",
+      "imgSrc": "imgs/b.png",
+      "bgGradient": ["#02BE83", "#B3F6DC"]
+    },
+    {
+      "id": 3,
+      "name": "Pink Goddess ",
+      "price": "$190.00",
+      "imgSrc": "imgs/others10.jpg",
+      "bgGradient": ["#FF3C78", "#FFB2B2"]
+    },
+    {
+      "id": 4,
+      "name": "Red Moon",
+      "price": "$299.99",
+      "imgSrc": "imgs/i.jpg",
+      "bgGradient": ["#8AA8F8", "#315BFF"]
+    },
+    {
+      "id": 5,
+      "name": "Midnight Desire #1",
+      "price": "$150.45",
+      "imgSrc": "imgs/c.jpg",
+      "bgGradient": ["#27EC37", "#CCEFBA"]
+    },
+    {
+      "id": 6,
+      "name": "Sultry Secrets",
+      "price": "$100.46",
+      "imgSrc": "imgs/e.jpg",
+      "bgGradient": ["#E9EA55", "#F7F7C1"]
+    },
+    {
+      "id": 7,
+      "name": "Sensual silk ",
+      "price": "$90.37",
+      "imgSrc": "imgs/d.jpg",
+      "bgGradient": ["#018F92", "#C7C5C5"]
+    },
+    {
+      "id": 8,
+      "name": "Midnight Finesse",
+      "price": "$150.46",
+      "imgSrc": "imgs/f.jpg",
+      "bgGradient": ["#9F2AFF", "#B59DF1"]
+    },
+    {
+      "id": 9,
+      "name": "Midnight Desire #2",
+      "price": "$60.13",
+      "imgSrc": "imgs/others.jpg",
+      "bgGradient": ["#2BFF5C", "#B2D0A5"]
+    },
+    {
+      "id": 10,
+      "name": "Midnight Desire #3",
+      "price": "$150.15",
+      "imgSrc": "imgs/maa.jpg",
+      "bgGradient": ["#F6FD14", "#D9E2A5"]
+    },
+    {
+      "id": 11,
+      "name": "Midnight Desire #4",
+      "price": "$200.73",
+      "imgSrc": "imgs/maa5.jpg",
+      "bgGradient": ["#E63A3A", "#FFBABA"]
+    },
+    {
+      "id": 12,
+      "name": "Midnight Desire #5",
+      "price": "$90.89",
+      "imgSrc": "imgs/h.jpg",
+      "bgGradient": ["#55B7D8", "#B0D8D5"]
+    },
+    {
+      "id": 13,
+      "name": "Midnight Desire #6",
+      "price": "$250.89",
+      "imgSrc": "imgs/others2.jpg",
+      "bgGradient": ["#55B7D8", "#B0D8D5"]
+    },
+    {
+      "id": 13,
+      "name": "Midnight Desire #7",
+      "price": "$150.89",
+      "imgSrc": "imgs/maa8.jpg",
+      "bgGradient": ["#55B7D8", "#B0D8D5"]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+
+
+
+@media only screen and (max-width: 1170px) {
+    .half-circle {
+        width: 60px;
+        height: 30px;
+        left: 74%;
+        bottom: 309px;
+    }
+
+    .cat img {
+        height: 175px;
+        left: 0%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1192px) {
+    .p-body {
+        width: 29%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1095px) {
+    .bestSeller {
+        flex-direction: column;
+    }
+
+    .shoes-display {
+        position: relative;
+        left: -342px;
+        width: 579px;
+    }
+
+    .best-p-detail {
+        margin-top: 90px;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    #sellerShoes {
+        height: 346px;
+        left: 300px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1003px) {
+    .p-body {
+        width: 44%;
+    }
+
+    .list li {
+        padding: 4px;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .cat-box {
+        flex-direction: column !important;
+    }
+
+    .cat {
+        width: 40%;
+        margin-bottom: 3rem;
+    }
+
+    #cat-para {
+        margin: 0px !important;
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+
+    /* navbar  */
+    .nav-links {
+        display: none;
+    }
+
+    /* hero box  */
+    .hero-box {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    /* featured products  */
+
+    .p-body {
+        width: 66%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #topProducts {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-p-text {
+        text-align: center;
+    }
+
+    .circle {
+        left: 9px;
+    }
+
+    .top-p-name {
+        font-size: 1.5rem;
+    }
+
+    .top-p-price {
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    /* best seller  */
+    .b-product-head {
+        flex-direction: column;
+    }
+
+    .b-product-head h1 {
+        margin-bottom: 23px;
+    }
+
+    #sellerShoes {
+        left: 313px;
+        height: 310px;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    .cat {
+        width: 57%;
+    }
+}
+
+
+@media only screen and (max-width: 677px) {
+
+    .shoes-display {
+        width: 623px;
+    }
+
+    #sellerShoes {
+        left: 465px;
+        height: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #emptyCart td img {
+        height: 313px !important;
+    }
+}
+
+@media only screen and (max-width: 586px) {
+   
+    .f-product-head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .f-product-head h1 {
+        font-size: 1.6rem;
+    }
+
+    .f-products {
+        padding: 40px 0px;
+    }
+
+    .shoesImg {
+        max-width: 150%;
+        z-index: 1;
+    }
+
+    .circle {
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 558px) {
+    .cart-prod {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .cart-prod img {
+        height: 70px !important;
+    }
+}

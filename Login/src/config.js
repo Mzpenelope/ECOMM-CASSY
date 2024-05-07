@@ -9,7 +9,7 @@ connect
     console.log("Database connection failed");
   });
 
-const LoginSchema = new mongoose.Schema({
+const LoginSchema = new mongoose.Schema ({
   name: {
     type: String,
     required: true,
@@ -19,6 +19,7 @@ const LoginSchema = new mongoose.Schema({
     required: true,
   },
 });
+
 
 // Schema for wishlist
 const WishlistSchema = new mongoose.Schema({
@@ -53,7 +54,7 @@ const CartSchema = new mongoose.Schema({
 });
 
 // Model for login users
-const User = mongoose.model("login-user", LoginSchema);
+const collection = new mongoose.model("login-user", LoginSchema);
 
 // Model for wishlist
 const Wishlist = mongoose.model("wishlist", WishlistSchema);
@@ -61,4 +62,5 @@ const Wishlist = mongoose.model("wishlist", WishlistSchema);
 // Model for cart
 const Cart = mongoose.model("cart", CartSchema);
 
-module.exports = { Login, Wishlist, Cart };
+
+module.exports = { collection, Wishlist, Cart };
