@@ -18,16 +18,20 @@ The vision is to offer our visitors an exceptional user experience, where every 
   Frontend development by Phillipa Aidoo and Backend by Christabel Aidoo.
 
 ![Newsletter](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/01112b58-2f53-4812-8572-afc415cbea02)
-- [Phillipa Aidoo](https://www.linkedin.com/in/phillipananaaidoo) - An Aspiring Full-stack Developer and a Cyber Security Expert. Currently expanding expertise in front-end technologies like React and backend development with Express.js @Alx. Seeking collaborative opportunities on challenging projects, bringing skills in digital marketing, cybersecurity, project management, and software engineering. Diverse professional background includes media and tutoring, with a journalistic touch in education. Outside of tech, interests include music and writing. Reach me at:
-👩‍💻 GitHub: @Mzpenelope
-📧 Email: phillipaaidoo12345@gmail.com
+- [Phillipa Aidoo](https://www.linkedin.com/in/phillipananaaidoo) - An Aspiring Full-stack Developer and a Cyber Security Expert. Currently expanding expertise in front-end technologies like React and backend development with Express.js @Alx. Seeking collaborative opportunities on challenging projects, bringing skills in digital marketing, cybersecurity, project management, and software engineering. Possesses diverse professional background which includes media and tutoring, with a journalistic touch in education. Outside of tech, interests include music and writing.
+Email: phillipaaidoo12345@gmail.com
 
 ![6ee4826f-614d-4ff4-8be6-46967cd6559a](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/01f9d7d3-5318-45bd-8cc5-a674bf1a146c)
 - [Christabel Aidoo](https://www.linkedin.com/in/christabel-aidoo) – An Aspiring Full-stack Developer and Backend Specialist.
 
+- Technical Expertise: C, Python, HTML, JavaScript, CSS, API integration, Django, Flask, Express.js and version control systems.
+
+- Management Expertise: Project Planning, Execution, Coordination, and Timely Delivery.
+
+- Communication Expertise: Writer and Communicator. Skilled in Negotiation, Strategic Persuasion, and Diffusion of Tense Situations.
+
+- Legal Expertise: Legal Research, Compliance, Legal Procedures, Case Management.
+
 ### Author's LinkedIn:
 - [Phillipa Aidoo](https://www.linkedin.com/in/phillipananaaidoo)
 - [Christabel Aidoo](https://www.linkedin.com/in/christabel-aidoo)
-
-
-
