@@ -8,8 +8,22 @@ ECOMM-CASSY is a dynamic website built and developed by Phillipa Aidoo and Chris
 ![touchmaster_1715076882977](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/364e7c23-a3a5-4418-99d9-46207acf7493)
 ![touchmaster_1715076854441](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/9b265944-0f63-4245-9f7c-3ade578968d5)
 
+## Language, Technology & Architecture 
 
-## TEAM'S VISION
+1. **Languages**:
+   - **HTML**:
+   - **CSS**:  
+   - **JavaScript**: 
+
+2. **Technologies**:
+   - **FontAwesom**
+   - **Viewport Meta Tag**
+   - **Form Submission**
+
+3. **Architecture**:
+   - **Client-Server Architecture**:
+
+## Team's Vision
 Cassintimates is a work in progress. Our shared commitment propels us forward, and we are dedicated to completing the project and transforming it into a fully functional website.
 The vision is to offer our visitors an exceptional user experience, where every click brings them closer to the celebration of technology, their own beauty and confidence.
 
