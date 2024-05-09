@@ -75,6 +75,39 @@ Static files are served from the "public" directory.**
    - **These models are exported for use in other parts of the application, such as routes or controllers, to perform CRUD (Create, Read, Update, Delete) operations on the database.**
    - **Dynamic elements like shopping cart, wishlist, and FAQ popup are implemented using JavaScript.**
 
+## Review of content in each folder
+
+**Src Folder**
+*Config.js File:*
+- Created a login model using a login schema for user authentication.
+- Utilized Mongoose library to connect to MongoDB Compass database for user data storage.
+*Index.js File:*
+- Implemented backend using Node.js.
+- Imported and utilized Express, body-parser, bcrypt, and EJS frameworks and libraries.
+- Used Express for handling HTTP requests and responses locally.
+- Employed body-parser middleware for parsing incoming JSON or URL encoded data to JavaScript objects.
+- Implemented bcrypt for hashing and comparing hashed passwords for user authentication.
+- Connected the database configured in config.js.
+- Utilized EJS templating engine for rendering dynamic HTML pages.
+- Defined routes for different pages like login, signup, home, etc.
+- Implemented user signup, login, and signout functionality.
+
+**Public Folder:**
+- Contains CSS files, JavaScript files, images, audios, and necessary assets for frontend styling and scripting.
+- Utilized Flexbox for horizontal alignment of navigation items.
+- Implemented hover effects and toggle button styles.
+- Included preloader and Lottie animation for cart page loading.
+- Employed media queries for responsive designs.
+- Styled elements using padding, margins, box-shadows, etc.
+- Imported Google Fonts and applied font families.
+- Used transitions and transformations for visual effects.
+- Ensured consistency and compatibility across different browsers and devices using W3.CSS framework version 4.12.
+
+**Views Folder:**
+- Contains HTML files for various pages including home, product pages, cart, contact, signup, login, signout, and about me.
+- Each page includes title tags, stylesheet links, embedded CSS styles, headers, navigation sections, body, and footer.
+- Homepage features subscriber section, Bootstrap and external libraries usage, SVG graphics, testimonial and blog sections, product categories display, social links, among others.
+- Combines HTML, CSS, JavaScript, SVG, and external libraries to create visually appealing and interactive webpage for intimate wears, engaging users with relevant information and functionality.
 
 ## Team's Vision
 Cassintimates is a work in progress. Our shared commitment propels us forward, and we are dedicated to completing the project and transforming it into a fully functional website.
