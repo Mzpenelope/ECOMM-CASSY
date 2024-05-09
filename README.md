@@ -4,7 +4,7 @@
 ECOMM-CASSY is a dynamic website built and developed by Phillipa Aidoo and Christabel Aidoo, driven by a shared passion to providing digital solutions to women needs.
 
 # Overview 
-Site url: https://a4friend.onrender.com
+Site url: https://ecommercem-1.onrender.com/home
 
 Demo: https://youtu.be/cRjkF_2yNZI
 https://youtube.com/shorts/4Yg8BMhjwIw?si=ZjhOwTpho1FcMNLi
