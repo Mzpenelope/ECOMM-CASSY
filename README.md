@@ -6,11 +6,17 @@ ECOMM-CASSY is a dynamic website built and developed by Phillipa Aidoo and Chris
 # Overview 
 Site url: https://a4friend.onrender.com
 
+Demo: https://youtu.be/cRjkF_2yNZI
+https://youtube.com/shorts/4Yg8BMhjwIw?si=ZjhOwTpho1FcMNLi
+
+Google Slide Presentation: https://docs.google.com/presentation/d/1yvYMpsdetXQuahBHdX4NEj8kY3eYIAa9LuEP1MGJ3A0/edit?usp=drivesdk
+
+
 ![touchmaster_1715076933986](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/7c3a36cd-9954-412f-b64d-b3750dcbd1cf)
 ![touchmaster_1715076882977](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/364e7c23-a3a5-4418-99d9-46207acf7493)
 ![touchmaster_1715076854441](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/9b265944-0f63-4245-9f7c-3ade578968d5)
 
-**Users can add and remove items from their shopping cart, signup, loin and signout**
+**Demo: Shopping cart functionality**
 https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/4a9bb53d-d082-4089-a097-3c23111d4d59
 
 ## Language, Technology & Architecture 
@@ -24,9 +30,9 @@ https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/4a9bb53d-d082-4089-a0
    - **Express.js: A web application framework for Node.js used for building APIs and web applications.**
    - **EJS (Embedded JavaScript): A templating engine used for generating dynamic HTML content.** 
    - **bcrypt: Library for hashing passwords securely.**
-   - **MongoDB**
-   - **Mongoose**
-   - **Nodemon**
+   - **MongoDB: A NoSQL database**
+   - **Mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js, which provides a straightforward schema-based solution for modeling application data.**
+   - **Nodemon: Monitors changes in Node.js application and automatically restarts the server when changes are detected**
    - **body-parser: Middleware for parsing incoming request bodies.**
    - **FirebaseFirebase: for data storage and retrieval.
 Various JavaScript functions handle event listeners, fetching data, and checkout processes.**
