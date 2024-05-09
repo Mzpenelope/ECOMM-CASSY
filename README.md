@@ -4,41 +4,46 @@
 ECOMM-CASSY is a dynamic website built and developed by Phillipa Aidoo and Christabel Aidoo, driven by a shared passion to providing digital solutions to women needs.
 
 # Overview 
+Site url: https://a4friend.onrender.com
+
 ![touchmaster_1715076933986](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/7c3a36cd-9954-412f-b64d-b3750dcbd1cf)
 ![touchmaster_1715076882977](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/364e7c23-a3a5-4418-99d9-46207acf7493)
 ![touchmaster_1715076854441](https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/9b265944-0f63-4245-9f7c-3ade578968d5)
 
-## Language, Technology & Architecture 
+**Users can add and remove items from their shopping cart, signup, loin and signout**
+https://github.com/Mzpenelope/ECOMM-CASSY/assets/129256391/4a9bb53d-d082-4089-a097-3c23111d4d59
 
+## Language, Technology & Architecture 
 1. **Languages**:
    - **HTML**:
    - **CSS**:  
    - **JavaScript**:
 
 2. **Technologies**:
+   - **Node.js: A JavaScript runtime used for building server-side applications.**
+   - **Express.js: A web application framework for Node.js used for building APIs and web applications.**
+   - **EJS (Embedded JavaScript): A templating engine used for generating dynamic HTML content.** 
+   - **bcrypt: Library for hashing passwords securely.**
+   - **MongoDB**
+   - **Mongoose**
+   - **Nodemon**
+   - **body-parser: Middleware for parsing incoming request bodies.**
+   - **FirebaseFirebase: for data storage and retrieval.
+Various JavaScript functions handle event listeners, fetching data, and checkout processes.**
+   - **Bootstrap: Responsive design is implemented with media queries and Bootstrap classes.**
+   - **Ionicons: used for iconography.**
+   - **swipper.js: for mobile bottom navigation.**
+   - **Boxicons: utilized for image galleries.**
+   - **4ka Scattered Photo and Video Gallery**
+   - **BaguetteBox.js**
+   - **w3.css**
+   - **Google Fonts**  
    - **FontAwesom**
    - **Viewport Meta Tag**
    - **Form Submission**
-   - **Node.js: A JavaScript runtime used for building server-side applications.**
-   - **Express.js: A web application framework for Node.js used for building APIs and web applications.**
-   - **EJS (Embedded JavaScript): A templating engine used for generating dynamic HTML content.**
-   - **MongoDB**
-   - **Mongoose**
-   - **bcrypt: Library for hashing passwords securely.**
-   - **Nodemon**
-   - **body-parser: Middleware for parsing incoming request bodies.**
-   - **Firebase**
-   - **Bootstrap**
-   - **BaguetteBox.js**
-   - **w3.css**
-   - **Ionicons**
-   - **Google Fonts**
-   - **swipper.js**
-   - **JavaScript**
-   - **4ka Scattered Photo and Video Gallery**
    - **jQuery**
    - **FontAwesome**
-   - **Boxicons** 
+   
 
 3. **Architecture**:
    - **Client-Server Architecture**:
@@ -51,12 +56,19 @@ ECOMM-CASSY is a dynamic website built and developed by Phillipa Aidoo and Chris
    - **Ionicons are used for iconography.**
    - **Middleware like express.json() and bodyParser.urlencoded() is used for parsing request bodies in JSON and URL-encoded formats.**
    - **EJS is configured as the view engine for rendering HTML pages.
-Static files are served from the "public" directory.
+Static files are served from the "public" directory.**
+   - **Routes are defined for different pages like login, signup, home, wishlist, cart, etc.**
+   - **User registration and login functionality is implemented using MongoDB for data storage and Bcrypt for password hashing.**
+   - **Routes are defined to handle adding products to the wishlist and cart, utilizing MongoDB for data storage.**
+   - **The server listens on port 5447 for incoming connections.**
+   - https://a4friend.onrender.com- **MongoDB**
+   - **Mongoose**Mongoose is used to define schemas for different types of data: Login, Wishlist, and Cart.**
+   - **Each schema defines the structure and validation rules for the corresponding MongoDB collection.**
+   - **Mongoose models are created based on the defined schemas to interact with the database.**
+   - **The collection model represents login users, while Wishlist and Cart models represent wishlist items and cart items, respectively.**
+   - **These models are exported for use in other parts of the application, such as routes or controllers, to perform CRUD (Create, Read, Update, Delete) operations on the database.**
+   - **Dynamic elements like shopping cart, wishlist, and FAQ popup are implemented using JavaScript.**
 
-Routes are defined for different pages like login, signup, home, wishlist, cart, etc.
-User registration and login functionality is implemented using MongoDB for data storage and Bcrypt for password hashing.
-Routes are defined to handle adding products to the wishlist and cart, utilizing MongoDB for data storage.
-The server listens on port 5447 for incoming connections.
 
 ## Team's Vision
 Cassintimates is a work in progress. Our shared commitment propels us forward, and we are dedicated to completing the project and transforming it into a fully functional website.
