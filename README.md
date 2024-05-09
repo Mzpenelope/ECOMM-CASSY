@@ -13,15 +13,50 @@ ECOMM-CASSY is a dynamic website built and developed by Phillipa Aidoo and Chris
 1. **Languages**:
    - **HTML**:
    - **CSS**:  
-   - **JavaScript**: 
+   - **JavaScript**:
 
 2. **Technologies**:
    - **FontAwesom**
    - **Viewport Meta Tag**
    - **Form Submission**
+   - **Node.js: A JavaScript runtime used for building server-side applications.**
+   - **Express.js: A web application framework for Node.js used for building APIs and web applications.**
+   - **EJS (Embedded JavaScript): A templating engine used for generating dynamic HTML content.**
+   - **MongoDB**
+   - **Mongoose**
+   - **bcrypt: Library for hashing passwords securely.**
+   - **Nodemon**
+   - **body-parser: Middleware for parsing incoming request bodies.**
+   - **Firebase**
+   - **Bootstrap**
+   - **BaguetteBox.js**
+   - **w3.css**
+   - **Ionicons**
+   - **Google Fonts**
+   - **swipper.js**
+   - **JavaScript**
+   - **4ka Scattered Photo and Video Gallery**
+   - **jQuery**
+   - **FontAwesome**
+   - **Boxicons** 
 
 3. **Architecture**:
    - **Client-Server Architecture**:
+   - **Dynamic elements like shopping cart, wishlist, and FAQ popup are implemented using JavaScript.**
+   - **Firebase Firestore is used for data storage and retrieval.**
+   - **Various JavaScript functions handle event listeners, fetching data, and checkout processes.**
+   - **Responsive design is implemented with media queries and Bootstrap classes.**
+   - **BaguetteBox.js is utilized for image galleries.**
+   - **Swiper.js is employed for mobile bottom navigation.**
+   - **Ionicons are used for iconography.**
+   - **Middleware like express.json() and bodyParser.urlencoded() is used for parsing request bodies in JSON and URL-encoded formats.**
+   - **EJS is configured as the view engine for rendering HTML pages.
+Static files are served from the "public" directory.
+
+Routes are defined for different pages like login, signup, home, wishlist, cart, etc.
+User registration and login functionality is implemented using MongoDB for data storage and Bcrypt for password hashing.
+Routes are defined to handle adding products to the wishlist and cart, utilizing MongoDB for data storage.
+The server listens on port 5447 for incoming connections.
 
 ## Team's Vision
 Cassintimates is a work in progress. Our shared commitment propels us forward, and we are dedicated to completing the project and transforming it into a fully functional website.
